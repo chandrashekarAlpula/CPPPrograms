@@ -1,0 +1,11 @@
+##Format - key,number of Bytes(B) or bits(b)
+#File Header
+mainVersion,1B;subVersion,1B;spare,30B
+
+#Event Header
+eventId,2B;eventLength,2B;callId,4B;year,1B;month,1B;day,1B;hour,1B;minute,1B;second,1B;tick,1B;spare,5B
+
+#CDR Event
+cellId,2B;spare,1B;callType,1B;spare,8B;imsiValidFlag,1b;anonymousFlag,1b;NumberofDigit,4b;spare,2b;imsi,8B;imeiValidFlag,1b;anonymousFlag,1b;NumberofDigit,4b;spare,2b;imei,8B;
+spare,11B;setupResult,1B;spare,10B;assignmentHour,1B;assignmentMinute,1B;assignmentSecond,1B;assignmentTick,1B;spare,8B;
+channelReleaseHour,1B;channelReleaseMinute,1B;channelReleaseSecond,1B;channelReleaseTick,1B;spare,2B;
